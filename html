@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meeting Notes - One-on-One with <span id="employeeName"></span></h1>
+        <div class="meeting-details">
+            <label for="meetingDate">Date:</label>
+            <input type="date" id="meetingDate">
+
+            <label for="meetingTime">Time:</label>
+            <input type="time" id="meetingTime">
+
+            <label for="meetingLocation">Location:</label>
+            <input type="text" id="meetingLocation">
+        </div>
+        <div class="agenda">
+            <h2>Agenda:</h2>
+            <ol id="agendaList">
+                <!-- Agenda items will be added dynamically -->
+            </ol>
+        </div>
+        <div class="action-items">
+            <h2>Action Items:</h2>
+            <ol id="actionItemsList">
+                <!-- Action items will be added dynamically -->
+            </ol>
+        </div>
+        <div class="decisions">
+            <h2>Decisions/Agreements:</h2>
+            <ul id="decisionsList">
+                <!-- Decisions/agreements will be added dynamically -->
+            </ul>
+        </div>
+        <div class="notes">
+            <h2>Other Notes:</h2>
+            <ul id="notesList">
+                <!-- Other notes will be added dynamically -->
+            </ul>
+        </div>
+        <button onclick="addAgendaItem()">Add Agenda Item</button>
+        <button onclick="addActionItem()">Add Action Item</button>
+        <button onclick="addDecision()">Add Decision/Agreement</button>
+        <button onclick="addNote()">Add Note</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

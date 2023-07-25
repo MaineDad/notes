@@ -1,0 +1,40 @@
+// Function to add agenda items dynamically
+function addAgendaItem() {
+    const agendaList = document.getElementById('agendaList');
+    const newAgendaItem = document.createElement('li');
+    newAgendaItem.innerHTML = `<input type="text" placeholder="Agenda Item">`;
+    agendaList.appendChild(newAgendaItem);
+}
+
+// Function to add action items dynamically
+function addActionItem() {
+    const actionItemsList = document.getElementById('actionItemsList');
+    const newActionItem = document.createElement('li');
+    newActionItem.innerHTML = `
+        <input type="text" placeholder="Action Item">
+        Responsible: <input type="text" placeholder="Responsible">
+        Deadline: <input type="date">
+    `;
+    actionItemsList.appendChild(newActionItem);
+}
+
+// Function to add decisions/agreements dynamically
+function addDecision() {
+    const decisionsList = document.getElementById('decisionsList');
+    const newDecision = document.createElement('li');
+    newDecision.innerHTML = `<input type="text" placeholder="Decision/Agreement">`;
+    decisionsList.appendChild(newDecision);
+}
+
+// Function to add notes dynamically
+function addNote() {
+    const notesList = document.getElementById('notesList');
+    const newNote = document.createElement('li');
+    newNote.innerHTML = `<input type="text" placeholder="Note">`;
+    notesList.appendChild(newNote);
+}
+
+// Get the employee name from the user and set it in the title
+const employeeName = prompt("Enter the employee's name:");
+const employeeNameElement = document.getElementById('employeeName');
+employeeNameElement.textContent = employeeName;
